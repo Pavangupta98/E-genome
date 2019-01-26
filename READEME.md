@@ -1,3 +1,4 @@
+#E-GENOME
 This project basically aims to bring together the different prospects of a Startup under one platform and thereby creating a startup ecosystem.
 The platform will remove duplicity in Startup data. The collection of this data will help bring in data-driven insights, thereby helping in scale-up of Startups, job creation, and economic growth. 
 E-genome is the network of people, startups, incubators, different government organization interacting together to work in a way that gains maximum profit for any organization. A platform to connect all these people together can help in achieving the target easily.
