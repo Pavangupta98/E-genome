@@ -36,7 +36,7 @@
         <i aria-hidden="true" class="sign-in icon"></i> Registration Portal
       </h1>
 
-      <form class="ui form recaptchaForm" action="http://127.0.0.1:8002/committee_registration/" method="post" onsubmit=" return myFun() ">
+      <form class="ui form recaptchaForm" action="http://127.0.0.1:8000/committee_registration/" method="post" onsubmit=" return myFun() ">
         <fieldset>
     <legend>Details:</legend>
         <div class="field">
@@ -131,7 +131,7 @@
 
   $.ajax({
       type: 'POST',
-      url: "http://127.0.0.1:8002/committee_registration/",
+      url: "http://127.0.0.1:8000/committee_registration/",
       dataType: 'json',
       data: JSON.stringify(obj),
       contentType : 'application/json',

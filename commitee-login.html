@@ -23,7 +23,7 @@
       <button class="ui blue basic inverted button" style="margin-right:10px;">
         < > <a href="committee-registration.html"> register</a>
       </button>
-      <form class="ui form recaptchaForm" action="http://127.0.0.1:8002/committee_login/" method="post">
+      <form class="ui form recaptchaForm" action="http://127.0.0.1:8000/committee_login/" method="post">
         <div class="field">
           <label>E-mail</label
           ><input placeholder="email" type="email" name="emlc" required />
@@ -93,7 +93,7 @@
 
         $.ajax({
           type: "POST",
-          url: "http://127.0.0.1:8002/committee_login/",
+          url: "http://127.0.0.1:8000/committee_login/",
           dataType: "json",
           data: JSON.stringify(obj),
           contentType: "application/json",
