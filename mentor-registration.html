@@ -40,16 +40,23 @@
         <fieldset>
     <legend>Details:</legend>
         <div class="field">
-          <label>company's name</label><input placeholder="name of your company" type="text" name="comp" required/>
+          <label>Name</label><input placeholder="name" type="text" name="comp" required/>
         </div> 
         <div class="field">
-          <label>country</label><input placeholder="State" type="text" name="country" required/>
+          <label>Country</label><input placeholder="State" type="text" name="country" required/>
         </div>
          <div class="field">
           <label>Address</label><input placeholder="city" type="text" name="add" required/>
         </div>
          <div class="field">
-          <label>Type of comppany</label><input type="text" name="t_name" required/>
+          <label>Field of Specialization</label>
+           <select>
+              <option value="software">software</option>
+              <option value="hardware">hardware</option>
+              <option value="marketing">marketing</option>
+              <option value="finance">finance</option>
+              <option value="other">other</option>
+            </select> 
         </div>
          <div class="field">
           <label>Description</label><input placeholder="description about your company in not more than 1500 words" type="text" name="desc" maxlength="6000"/>
