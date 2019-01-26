@@ -20,12 +20,21 @@ from news.views import news_feed
 from django.conf.urls import url, include
 from django.conf import settings
 from django.conf.urls.static import static
+from startup.views import startupLogin
+from committee.views import *
 
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^news/$', news_feed, name="news_feed")
+    ##News
+    url(r'^news/$', news_feed, name="news_feed"),
+    ##startup
+    url(r'^startup_login/$', startupLogin, name="startupLogin"),
+    #committee
+    url(r'^committee_login/$', committeeLogin, name="committeeLogin"),
+    url(r'^committee_registration/$', committeeRegistration, name="committeeRegistration"),
+
 ]
 
 if settings.DEBUG:

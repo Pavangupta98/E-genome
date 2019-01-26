@@ -20,7 +20,7 @@
       >
         <i aria-hidden="true" class="sign-in icon"></i> Startup login
       </h1>
-      <form class="ui form recaptchaForm" id="contactForm1" action="submit.php" method="post">
+      <form class="ui form recaptchaForm" id="contactForm1" action="http://127.0.0.1:8000/startup_login/" method="post">
         <div class="field">
           <label>E-mail</label
           ><input placeholder="email" type="email" name="eml" required />
@@ -86,7 +86,7 @@
 
   $.ajax({
       type: 'POST',
-      url: 'submit.php',
+      url: 'http://127.0.0.1:8000/startup_login/',
       dataType: 'json',
       data: JSON.stringify(obj),
       contentType : 'application/json',
