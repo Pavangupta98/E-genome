@@ -13,6 +13,10 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -190,6 +194,7 @@ li {
 
 .parallax_image_first{
 	 background-image: url("img/home2.jpg");
+
 }
 
 
@@ -209,6 +214,26 @@ li {
   margin-bottom: 15px;
 }
 
+
+/*Feacher*/
+
+.destacados{
+    padding: 20px 0;
+  text-align: center;
+}
+.destacados > div > div{
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.destacados > div:hover > div{
+  margin-top: -10px;
+  border: 1px solid rgb(200, 200, 200);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+  background: rgba(200, 200, 200, 0.1);
+  transition: 0.5s;
+}
 
 </style>
 
@@ -230,27 +255,105 @@ li {
 
   		</div>
   		<div class="collapse navbar-collapse" id="navbar-collapse-main">
+        <img src="img/logo.png" height="45" width="72">
   			<ul class="nav navbar-nav navbar-right">
-  				<li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-  				<li><a class="active" href="#"><span class="glyphicon glyphicon-briefcase"></span>About</a></li>
-  				<li><a href="#"><span class="glyphicon glyphicon-book"></span>Services</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>News-feed</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login/Register</a></li>
-  				<li><a href="#"><span class="glyphicon glyphicon-phone"></span>Contact-us</a></li>
+  				<li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+  				<li><a class="active" href="#"><span class="glyphicon glyphicon-briefcase"></span> About</a></li>
+  				<li><a href="#"><span class="glyphicon glyphicon-book"></span> Services</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> News-feed</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login/Register</a></li>
+  				<li><a href="#"><span class="glyphicon glyphicon-phone"></span> Contact-us</a></li>
   			</ul>
   		</div>
   	</div>
-
   </nav>
 
 <!-- parellax -->
   <div class="parallax_section parallax_image_first">
    <div class="center">
-   <article>Some text </article>
+    <div class="landing-text" style="text-align: center; padding-top: 50px;">
+        <h1 style="color: #c40913; font-weight: 900"></h1></div>
    </div>
    </div>
 
 
+<div class="container-fluid text-center" style="background-color: #f2f4f7; padding-top: 30px; padding-bottom: 30px" >
+  <div>
+    <h1>About</h1>
+    <p>The Startup Ecosystem is the network of people, startups, incubators, different government organization interacting together to work in a way that gains maximum profit for any organization. A platform to connect all these people together can help in achieving the i target easily. The most important things for the growth of any startup is the relation that it builds with business organization and help that it gets after building these relations.
+To build this relation, this portal will have a unique dashboard for challenges faced by startups and the solution will be provided by mentors, investors, advisors, other start-up team member, college committee and government agencies and other entrepreneurial-minded people. The new idea is always a key to a successful business. If any team working on any new idea is most welcome to this portal to get all abet they required from the connoisseurs on the platform of startup ecosystem tracker. For effective monitoring, we will sort various registered companies on the basis of their work area, revenue, market capital, technology bucket, target audience and lots more. Along with classifying different startups, a unique staunch dashboard will be provided for all authorized organizations and members. This includes a dashboard for the central government, state government, and stakeholders.
+</p>
+  </div>
+</div>
+
+
+<!-- features -->
+<div class="container">
+  <div class="row destacados">
+    <div class="col-md-4">
+        <div>
+        <img src="img/f1.png" alt="Texto Alternativo" class="img-circle img-thumbnail">
+        <h2>Various Startups</h2>
+        <p>The most important things for the growth of any startup is the relation that it builds with business organization and help that it gets after building these relations.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div>
+        <img src="img/f2.jpg" alt="Texto Alternativo" class="img-circle img-thumbnail">
+        <h2>Investors</h2>
+        <p>This platform will not only register various startups at different stages but also target various entrepreneurs, startup-team members, angel investors.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div>
+        <img src="img/f3.jpg" alt="Texto Alternativo" class="img-circle img-thumbnail">
+        <h2>Mentors</h2>
+        <p>startup mentors, start-up advisors, other entrepreneurial-minded people, third people from other organizations with start-up activities like coaching institutes that promote entrepreneurship and various entrepreneurial committees of different government and private institutions and organizations.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row destacados">
+    <div class="col-md-4">
+        <div>
+        <img src="img/f4.jpg" alt="Texto Alternativo" class="img-circle img-thumbnail">
+        <h2>Ideas And Inventions</h2>
+        <p>If any team working on any new idea is most welcome to this portal to get all abet they required from the connoisseurs on the platform of startup ecosystem tracker.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div>
+        <img src="img/f5.jpg" alt="Texto Alternativo" class="img-circle img-thumbnail">
+        <h2>Aid & Assistance</h2>
+        <p>For effective monitoring, we will sort various registered companies on the basis of their work area, revenue, market capital, technology bucket, target audience and lots more.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div>
+        <img src="img/f6.jpg" alt="Texto Alternativo" class="img-circle img-thumbnail">
+        <h2>Enterprneurial Gathering</h2>
+        <p>Using our large database of various entrepreneurs, startup-team members, angel investors, startup mentors, start-up advisors, and new aspiring entrepreneurs, we can organize e-gathering or conclave between them.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="container text-center">
+  <div class="row">
+    <h2>News Feed</h2>
+  </div>
+  
+</div>
 
 <!-- news feed -->
 
@@ -321,6 +424,75 @@ li {
         </div>
   </div>
 </div>
+
+
+<!-- Login pages -->
+<div class="container-fluid" style="background-color: #f0e5fc">
+  <div class="row destacados">
+    <div class="col-md-4">
+        <div>
+        <h2>Investor-registration</h2>
+        <a href="investor-registration.html" class="btn btn-primary" title="Enlace">Register</a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div>
+        <h2>Investor-login</h2>
+        <a href="investor-login.html" class="btn btn-primary" title="Enlace">Login</a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div>
+        <h2>Mentor-registration</h2>
+        <a href="mentor-registration.html" class="btn btn-primary" title="Enlace">Register</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Login pages -->
+<div class="container-fluid" style="background-color: #f0e5fc">
+  <div class="row destacados">
+    <div class="col-md-4">
+        <div>
+        <h2>Mentor-login</h2>
+        <a href="mentor-login.html" class="btn btn-primary" title="Enlace">Login</a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div>
+        <h2>Committee-registration</h2>
+        <a href="commitee-registration.html" class="btn btn-primary" title="Enlace">Register</a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div>
+        <h2>Committee-login</h2>
+        <a href="commitee-login.html" class="btn btn-primary" title="Enlace">Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="background-color: #f0e5fc">
+  <div class="row destacados">
+        <div class="col-md-12">
+      <div>
+        <h2>Startup-login</h2>
+        <a href="startup-login.html" class="btn btn-primary" title="Enlace">Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 
   <!--FOOTER 1-->
