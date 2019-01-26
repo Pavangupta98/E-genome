@@ -8,7 +8,6 @@ The new idea is always a key to a successful business. If any team working on an
 For effective monitoring, we will sort various registered companies on the basis of their work area, revenue, market capital, technology bucket, target audience and lots more.
 A large number of entrepreneurs lack exposure sometimes. They did not get enough opportunities to present their ideas in front of angel investors. To solve this using our portal can be very easy. Using our large database of various entrepreneurs, startup-team members, angel investors, startup mentors, start-up advisors, and new aspiring entrepreneurs, we can organize e-gathering or conclave between them. This will not only builds relation or helps in getting their first funding, but also in monitoring after process activities. This will includes document verification, bonds, terms and conditions, the amount given and lots more.
 Marketing needs to be vehement for any successful idea or events, and this portal makes it effortless. This portal will have a detailed dashboard for event section that not only shows various entrepreneur related activities going around, but also gives important news regarding entrepreneur related sch by the government, business opportunities in various sectors etc.
-TECHNOLOGY STACK.
 
 
 
