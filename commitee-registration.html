@@ -35,13 +35,13 @@
       >
         <i aria-hidden="true" class="sign-in icon"></i> Registration Portal
       </h1>
-       
-      <form class="ui form recaptchaForm" action="submit.php" method="post" onsubmit=" return myFun() ">
+
+      <form class="ui form recaptchaForm" action="http://127.0.0.1/committee_login/" method="post" onsubmit=" return myFun() ">
         <fieldset>
     <legend>Details:</legend>
         <div class="field">
           <label>Institution's Name</label><input placeholder="name of your institution" type="text" name="inst" required/>
-        </div> 
+        </div>
         <div class="field">
           <label>State</label><input placeholder="State" type="text" name="state" required/>
         </div>
@@ -74,7 +74,7 @@
     confirm password: <input type="password" name="pwd4" id="p2" value="" required>
     <span id="m2"></span>
   </fieldset>
-        
+
         <div class="field">
           <div class="ui checkbox">
             <input
@@ -98,7 +98,7 @@
     </div>
 
     <script>
-      
+
       $(document).ready(funtion(){
         $(".recaptchaForm").on('submit', function(event){
           var recaptcha = $(#g-recaptcha-response).val();
@@ -124,6 +124,23 @@
         });
       };
     </script>
+    <script type="text/javascript">
+    $('form').submit(function(){
+
+  var obj = $('form').serializeJSON();
+
+  $.ajax({
+      type: 'POST',
+      url: 'http://127.0.0.1/committee_login/',
+      dataType: 'json',
+      data: JSON.stringify(obj),
+      contentType : 'application/json',
+      success: function(data) {
+          alert(data)
+      }
+  });
+
+});
+    </script>
   </body>
 </html>
-
