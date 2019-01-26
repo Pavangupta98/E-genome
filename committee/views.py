@@ -11,8 +11,8 @@ def committeeLogin(request):
     print(email)
     try:
     	if request.method=="POST":
-	    	if Committee.objects.filter(email=email).exisits():
-	    		committee_instance = Committee.objects.filter(email=email)
+	    	if Committee.objects.filter(email=email).exists():
+	    		committee_instance = Committee.objects.get(email=email)
 	    		print(committee_instance)
 	    		password = request.POST.get("pwd2")
 	    		if str(password)== committee_instance.password:
@@ -24,9 +24,12 @@ def committeeLogin(request):
 	    	else:
 	    		response_json["success"] = False
 	    		response_json["message"] = "email doesnt exiast. Kindly register first before logging in."
+    	else: 
+    		response_json["success"] = False
+    		response_json["message"] = "not post method"
     except Exception as e:
     	print(e)
-    	message = "exception - " + e
+    	message = "exception - " + str(e)
     	response_json["success"] = False
     	response_json["message"] = message
 
@@ -39,7 +42,7 @@ def committeeRegistration(request):
 	try:
 		if request.method == "POST":
 			email = request.POST.get("eml1")
-			if Committee.objects.filter(email=email).exisits():
+			if Committee.objects.filter(email=email).exists():
 				response_json["success"] = False
 				response_json["message"] = "Please try to log in as you have already register"
 			else:
