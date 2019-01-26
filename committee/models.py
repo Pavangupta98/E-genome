@@ -20,8 +20,8 @@ class Committee(models.Model):
 	last2activities2 = models.FileField(upload_to='committee_documents')
 	self_certification = models.FileField(upload_to='committee_documents')
 	email = models.CharField(blank=False, null=False, max_length=50)
-    password = models.CharField(max_length=20, blank=True, null=True)
-    created = models.DateTimeField(auto_now=False, auto_now_add=True)
+	password = models.CharField(max_length=20, blank=True, null=True)
+	created = models.DateTimeField(auto_now=False, auto_now_add=True)
 	modified = models.DateTimeField(auto_now=True, auto_now_add=False) 
 	
 	def __str__(self):
